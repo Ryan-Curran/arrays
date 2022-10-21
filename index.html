@@ -10,6 +10,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- with thanks to https://bootstrap.build/app -->
   <link rel="stylesheet" href="styles/jmu-f22-bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
   <script src="scripts/data.js"></script>
 </head>
 
@@ -60,16 +61,14 @@
       <div class="col-lg-8">
         <h2>Items</h2>
         <!-- with thanks to https://getbootstrap.com/docs/5.2/components/card/#grid-cards -->
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <script src="scripts/arrays.js"></script>
-          
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="filtered-results">
         </div>
       </div>
       <div class="col-lg-4">
         <h2>Summary</h2>
         <dl>
           <dt>Count</dt>
-          <dd><span>4</span> items</dd>
+          <dd><span id="result-count">4 items</span></dd>
           <dt>Cost</dt>
           <dd><span>12</span> credit-hours + <span>6</span> credit-hours of prereqs</dd>
         </dl>
@@ -80,7 +79,7 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
   
-  
+  <script src="scripts/arrays.js"></script>
 </body>
 
 </html>
